@@ -1,0 +1,14 @@
+<div class="loginContainer">
+  <form class="loginForm">
+    <h2>Login</h2>
+    <label>
+      Username
+      <input type="text" [formField]="loginForm.email" />
+    </label>
+    <label>
+      Password
+      <input type="password" [formField]="loginForm.password" />
+    </label>
+    <button type="button" (click)="onLogin()">Login</button>
+  </form>
+</div>
