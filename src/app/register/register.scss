@@ -1,4 +1,4 @@
-.loginContainer {
+.registerContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,7 +6,7 @@
   font-family: sans-serif;
 }
 
-.loginForm {
+.registerForm {
   background: #fff;
   border-radius: 6px;
   padding: 20px 24px;
@@ -50,7 +50,7 @@
     }
   }
 
-  .registerLink {
+  .loginLink {
     display: block;
     margin-top: 12px;
     text-align: center;

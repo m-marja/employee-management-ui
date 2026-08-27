@@ -12,6 +12,14 @@ interface LoginResponse {
   };
 }
 
+interface RegisterResponse {
+  user: {
+    id: number;
+    email: string;
+    role: string;
+  };
+}
+
 @Injectable({
   providedIn: "root",
 })
@@ -31,6 +39,13 @@ export class AuthService {
           localStorage.setItem("access_token", response.token);
         })
       );
+  }
+
+  register(email: string, password: string) {
+    return this.http.post<RegisterResponse>(`${this.authUrl}/register`, {
+      email,
+      password,
+    });
   }
 
   logout(): void {

@@ -1,0 +1,19 @@
+<div class="registerContainer">
+  <form class="registerForm">
+    <h2>Register</h2>
+    <label>
+      Username
+      <input type="text" [formField]="registerForm.email" />
+    </label>
+    <label>
+      Password
+      <input type="password" [formField]="registerForm.password" />
+    </label>
+    <label>
+      Confirm Password
+      <input type="password" [formField]="registerForm.confirmPassword" />
+    </label>
+    <button type="button" (click)="onRegister()">Register</button>
+    <a class="loginLink" routerLink="/login">Already have an account? Login</a>
+  </form>
+</div>
